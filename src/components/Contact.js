@@ -3,25 +3,16 @@ import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
   const location = useLocation();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    department: '',
-    message: '',
-    interest: 'dogs'
-  });
-
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Handle dog information when navigating from dog profile
   useEffect(() => {
     if (location.state?.selectedDog) {
       const { selectedDog, dogInfo } = location.state;
-      setFormData(prev => ({
-        ...prev,
-        message: `I'm interested in ${selectedDog} (${dogInfo}). Please provide detailed information about this K-9 unit, including training history, certifications, and availability. I would also like information about handler training programs and pricing.`
-      }));
+      // setFormData(prev => ({ // This line was removed as per the edit hint
+      //   ...prev,
+      //   message: `I'm interested in ${selectedDog} (${dogInfo}). Please provide detailed information about this K-9 unit, including training history, certifications, and availability. I would also like information about handler training programs and pricing.`
+      // }));
     }
   }, [location.state]);
 

@@ -81,7 +81,7 @@ const Hero = () => {
               </div>
               <div style={{ 
                 fontSize: '1rem', 
-                fontWeight: '600', 
+                fontWeight: 'bold', 
                 color: '#e74c3c',
                 marginTop: '6px',
                 textTransform: 'uppercase',
@@ -89,7 +89,6 @@ const Hero = () => {
                 backgroundColor: 'rgba(255,255,255,0.95)',
                 padding: '7px 18px',
                 borderRadius: '16px',
-                fontWeight: 'bold',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.3)'
               }}>
                 Law Enforcement K-9

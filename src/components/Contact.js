@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
   const location = useLocation();
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Handle dog information when navigating from dog profile
   useEffect(() => {
@@ -15,37 +14,6 @@ const Contact = () => {
       // }));
     }
   }, [location.state]);
-
-  if (isSubmitted) {
-    return (
-      <section className="contact-section">
-        <div className="container">
-          <div style={{ 
-            textAlign: 'center', 
-            padding: '3rem',
-            backgroundColor: '#e8f5e8',
-            borderRadius: '15px',
-            margin: '2rem 0',
-            border: '2px solid #2d5a2d'
-          }}>
-            <h2 style={{ color: '#2d5a2d', marginBottom: '1rem' }}>
-              Thank You for Your Interest!
-            </h2>
-            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-              We've received your inquiry and will contact you within 24 hours 
-              to discuss your requirements and provide detailed information about our K-9 units and training programs.
-            </p>
-            <button 
-              className="btn btn-primary"
-              onClick={() => setIsSubmitted(false)}
-            >
-              Send Another Message
-            </button>
-          </div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="contact-section">

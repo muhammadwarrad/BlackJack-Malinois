@@ -127,15 +127,14 @@ const Contact = () => {
 
         <div className="contact-grid">
           <div className="contact-form">
-            <form onSubmit={handleSubmit}>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                 />
               </div>
@@ -146,8 +145,6 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                 />
               </div>
@@ -158,8 +155,6 @@ const Contact = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                 />
               </div>
 
@@ -169,8 +164,6 @@ const Contact = () => {
                   type="text"
                   id="department"
                   name="department"
-                  value={formData.department}
-                  onChange={handleChange}
                   placeholder="e.g., City Police Department"
                   required
                 />
@@ -181,8 +174,6 @@ const Contact = () => {
                 <select
                   id="interest"
                   name="interest"
-                  value={formData.interest}
-                  onChange={handleChange}
                 >
                   <option value="dogs">Police K-9s for Sale</option>
                   <option value="training">Handler Training Course</option>
@@ -198,8 +189,6 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   rows="5"
                   required
                   placeholder="Please describe your requirements, timeline, and any specific needs for your department..."
@@ -227,7 +216,7 @@ const Contact = () => {
               <div className="contact-icon">📧</div>
               <div>
                 <strong style={{ color: 'white' }}>Email</strong><br />
-                <a href="mailto:info@blackjackmalinois.com" style={{ color: '#4169E1', textDecoration: 'none' }}>info@blackjackmalinois.com</a>
+                <a href="mailto:sales.blackjackmalinois@gmail.com" style={{ color: '#4169E1', textDecoration: 'none' }}>sales.blackjackmalinois@gmail.com</a>
               </div>
             </div>
 

@@ -96,9 +96,6 @@ const Hero = () => {
             </div>
             <h1 style={{ margin: 0, fontSize: '2.2rem', fontWeight: 900, letterSpacing: '1px', color: 'white', textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>Elite Police K-9s for Law Enforcement</h1>
           </div>
-          <p style={{ fontSize: '1.2rem', marginBottom: '1.1rem', fontWeight: '600', color: '#fff', textAlign: 'center' }}>
-            Why Choose Blackjack Malinois for Your K-9 Unit
-          </p>
           <div style={{ 
             maxWidth: '1000px', 
             margin: '0 auto 1.5rem auto',

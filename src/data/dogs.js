@@ -48,7 +48,7 @@ export const dogs = [
       health: "Certified"
     },
     price: "$15,000",
-    status: "Available"
+    status: "Sold"
   },
   {
     id: 4,

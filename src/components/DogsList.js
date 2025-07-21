@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DogCard from './DogCard';
 import { dogs } from '../data/dogs';
+import { Link } from 'react-router-dom';
 
 const DogsList = () => {
   const [filter, setFilter] = useState('all');
@@ -120,9 +121,9 @@ const DogsList = () => {
             Contact us for detailed information about our available K-9 units, 
             training programs, and department consultation services.
           </p>
-          <a href="/contact" className="btn btn-primary">
+          <Link to="/contact" className="btn btn-primary">
             Contact Us for Availability
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -64,19 +64,19 @@ body {
 }
 
 .btn-male-selected {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: white;
-  border: 1px solid #1e3c72;
+  background: linear-gradient(135deg, #374F6B 60%, #4A90E2 100%);
+  color: #fff;
+  border: 2px solid #4A90E2;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(30,60,114,0.15);
+  box-shadow: 0 2px 8px rgba(55,79,107,0.18);
 }
 
 .btn-female-selected {
-  background: linear-gradient(135deg, #e75480, #ffb6c1);
-  color: white;
-  border: 1px solid #e75480;
+  background: linear-gradient(135deg, #ff5fa2 60%, #ffb6e6 100%);
+  color: #fff;
+  border: 2px solid #ff5fa2;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(231,84,128,0.15);
+  box-shadow: 0 2px 8px rgba(255,95,162,0.18);
 }
 
 /* Navbar */

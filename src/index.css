@@ -599,28 +599,29 @@ body {
 
 @media (max-width: 700px) {
   .navbar-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0 8px;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 10px !important;
+    gap: 0 !important;
   }
   .navbar-container > div:first-child {
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
-    gap: 0.5rem !important;
-    width: 100%;
+    gap: 0.7rem !important;
+    width: auto;
   }
   .navbar-container a.logo {
-    margin-left: 0 !important;
-    margin-top: 0.3rem;
+    margin-left: 12px !important;
+    margin-top: 0;
     font-size: 1.2rem !important;
-    text-align: center;
-    width: 100%;
-    display: block;
+    text-align: left;
+    width: auto;
+    display: inline-block;
   }
   .navbar-container img {
     margin: 0 6px 0 0;
-    width: 38px !important;
-    height: 38px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
 }

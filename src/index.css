@@ -567,6 +567,13 @@ body {
   box-sizing: border-box;
 }
 @media (max-width: 700px) {
+  .home-gallery-grid,
+  .home-gallery-large,
+  .home-gallery-small {
+    overflow: hidden !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
   .home-gallery-grid {
     display: flex;
     flex-direction: column;
@@ -625,5 +632,15 @@ body {
     margin: 0 6px 0 0;
     width: 32px !important;
     height: 32px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    border: 1.5px solid rgba(255,255,255,0.08) !important;
+    box-shadow: none !important;
+    background: rgba(55, 79, 107, 0.12) !important;
   }
 }

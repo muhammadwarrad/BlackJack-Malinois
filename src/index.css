@@ -574,16 +574,18 @@ body {
   }
   .home-gallery-large,
   .home-gallery-small {
-    min-height: 220px;
-    height: auto;
+    min-height: unset !important;
+    height: auto !important;
     border-radius: 14px;
   }
   .home-gallery-large img,
   .home-gallery-small img {
-    min-height: 180px;
-    height: 40vw;
-    max-height: 220px;
-    object-fit: cover;
+    width: 100%;
+    height: auto !important;
+    min-height: unset !important;
+    max-height: 60vw !important;
+    object-fit: contain !important;
+    display: block;
   }
   .home-gallery-caption {
     font-size: 1.05rem;

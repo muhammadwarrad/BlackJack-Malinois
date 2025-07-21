@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
@@ -7,11 +7,7 @@ const Contact = () => {
   // Handle dog information when navigating from dog profile
   useEffect(() => {
     if (location.state?.selectedDog) {
-      const { selectedDog, dogInfo } = location.state;
-      // setFormData(prev => ({ // This line was removed as per the edit hint
-      //   ...prev,
-      //   message: `I'm interested in ${selectedDog} (${dogInfo}). Please provide detailed information about this K-9 unit, including training history, certifications, and availability. I would also like information about handler training programs and pricing.`
-      // }));
+      // No-op: previously used to prefill form, now unused
     }
   }, [location.state]);
 

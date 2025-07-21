@@ -253,6 +253,9 @@ const Hero = () => {
           {/* Remove the blue badge row at the bottom */}
         </div>
       </section>
+      <div style={{margin: "2rem 0", color: "#fff", fontSize: "1.15rem", textAlign: "center"}}>
+        <strong>Looking for police dogs, K9 units, or trained working dogs?</strong> Blackjack Malinois is your trusted source for police dogs for sale near me, K9 for sale, law enforcement K9s, and the best Belgian Malinois in the USA. We provide certified police dogs, K9 handler training, and working dogs for departments nationwide. Whether you need a dual-purpose K9, detection dog, or patrol dog, our expert trainers and world-class dogs are ready to serve.
+      </div>
       <HomeGallery />
     </>
   );

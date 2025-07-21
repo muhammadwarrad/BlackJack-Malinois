@@ -25,28 +25,6 @@ const Contact = () => {
     }
   }, [location.state]);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      department: '',
-      message: '',
-      interest: 'dogs'
-    });
-  };
-
   if (isSubmitted) {
     return (
       <section className="contact-section">

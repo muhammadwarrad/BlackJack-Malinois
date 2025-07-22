@@ -125,6 +125,13 @@ const Contact = () => {
                   rows="5"
                   required
                   placeholder="Please describe your requirements, timeline, and any specific needs for your department..."
+                  defaultValue={
+                    location.state?.dogInfo
+                      ? `I'm interested in ${location.state.dogInfo}. Please provide more information.`
+                      : location.state?.selectedDog
+                        ? `I'm interested in ${location.state.selectedDog}. Please provide more information.`
+                        : ''
+                  }
                 />
               </div>
 

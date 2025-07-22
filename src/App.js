@@ -7,6 +7,7 @@ import DogProfile from './components/DogProfile';
 import Training from './components/Training';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
@@ -48,6 +49,8 @@ function App() {
             <Footer />
           </>
         } />
+
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </div>
   );

@@ -60,7 +60,7 @@ const Contact = () => {
 
         <div className="contact-grid">
           <div className="contact-form">
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" action="/thank-you">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
